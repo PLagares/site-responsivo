@@ -1,0 +1,261 @@
+:root {
+  --primary: #fef4de;
+  --font-header: "poppins", sans-serif;
+  --font-body: "roboto";
+  --white: #fff;
+  --brown: #5c2c24;
+  --orange: #ff6e1d;
+  --font-size-small: 1rem;
+  --font-size-medium: 1.2rem;
+  --font-size-large: 6rem;
+  --button-ligth: #f3ce5e;
+}
+
+body {
+  background: #5c2c24;
+}
+
+.header {
+  background: var(--primary);
+  width: 100%;
+  display: flex;
+  padding: 1.5rem 2.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*logo*/
+.LOGO {
+  width: 40%;
+}
+
+.LOGO {
+  font-family: var(--font-header);
+  font-weight: 500;
+}
+
+.LOGO a {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+.LOGO span {
+  text-decoration: none;
+  color: var(--brown);
+}
+
+/*MENU*/
+.navigation {
+  width: 60%;
+}
+.navigation ul {
+  display: flex;
+  justify-content: end;
+  gap: 3rem;
+}
+.navigation ul li {
+  list-style: none;
+  cursor: pointer;
+}
+.navigation ul li a {
+  text-decoration: none;
+  color: var(--brown);
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: var(--orange);
+}
+
+/*banner*/
+
+.banner {
+  width: 100%;
+  background: var(--primary);
+  border-radius: 0% 0% 50% 50% /25% 25% 18% 21%;
+}
+
+.banner-content {
+  width: 85%;
+  padding: 6rem;
+  display: flex;
+  margin: auto;
+}
+
+.banner-text {
+  margin: auto;
+  width: 50%;
+}
+
+.banner-title {
+  font-size: var(--font-size-large);
+  font-family: var(--font-header);
+  color: var(--brown);
+  line-height: 118%;
+  text-transform: uppercase;
+  font-weight: 900;
+  filter: drop-shadow(2px 1px 1px var(--orange));
+}
+
+.banner-subtitle {
+  font-size: var(--font-size-small);
+  font-family: var(--font-header);
+  color: var(--brown);
+  line-height: 0.1rem;
+}
+
+.banner-img {
+  width: 50%;
+  padding: 6rem 0;
+  display: flex;
+  margin: auto;
+}
+
+.banner-image {
+  width: 70%;
+  margin: auto;
+}
+
+.banner-description {
+  font-size: var(--font-size-small);
+  font-family: var(--font-body);
+  padding: 0rem 0.3rem;
+  width: 85%;
+  margin-bottom: 1.5rem;
+}
+
+.banner-button {
+  width: 150px;
+  background: var(--orange);
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-family: var(--font-body);
+  color: var(--white);
+  font-weight: 600;
+  font-size: var(--font-size-small);
+}
+
+/*cards*/
+
+.cards {
+  margin: 3rem 0;
+  width: 100%;
+}
+
+.card-title {
+  text-align: center;
+  font-size: var(--font-size-medium);
+  font-family: var(--font-header);
+  font-weight: 700;
+  color: var(--white);
+}
+
+.card-content{
+  width: 90%;
+  display: flex;
+  margin: 0.5rem auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 0.3rem 8rem;
+}
+
+.card {
+  width: 80px;
+  border: 0.5px solid var(--primary);
+  height: 120px;
+  background: url("../imagem/icons8-burger-sandwich-64.png") center no-repeat;
+  background-size: 80px;
+  margin: 1rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+}
+
+.card-button{
+  margin: 0.4rem auto 2rem;
+  font-family: var(--font-header);
+  width: 150px;
+  justify-content: center;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  background: var(--button-ligth);
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  display: flex;
+  transition: filter 0.5s;
+}
+
+.card-button:hover{
+  filter: brightness(0.9);
+}
+.card:hover{
+  background-size: 110px;
+}
+
+/*DESCRIPTION*/
+
+.descriptions{
+  width: 100%;
+  padding: 1rem 0 8rem 0;
+}
+
+.descriptions-title{
+  text-align: center;
+  margin: 3rem 0;
+  font-size: var(--font-size-medium);
+  color:var(--brown);
+  font-weight: 700;
+  font-family: var(--font-header);
+}
+
+.description-content{
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.description-card{
+  width: calc(40% - 20px);
+  padding: 1.6rem 2rem;
+  background: #fff;
+  font-family: var(--font-body);
+  border-radius: 2REM;
+  display: flex;
+  row-gap: 1rem;
+  flex-direction: column;
+}
+
+.description-title{
+  color: var(--brown);
+  font-size: var(--font-size-small);
+}
+
+.description-button{
+  margin: 0.4rem auto 2rem;
+  font-family: var(--font-header);
+  width: 150px;
+  justify-content: center;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  background: var(--button-ligth);
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  display: flex;
+  transition: filter 0.5s;
+}
+
+.description-button{
+  filter: brightness(0.9);
+}
