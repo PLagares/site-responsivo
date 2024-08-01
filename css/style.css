@@ -4,6 +4,7 @@
   --font-body: "roboto";
   --white: #fff;
   --brown: #5c2c24;
+  --gray: #888888
   --orange: #ff6e1d;
   --font-size-small: 1rem;
   --font-size-medium: 1.2rem;
@@ -203,6 +204,7 @@ body {
 
 .descriptions{
   width: 100%;
+  background: var(--primary);
   padding: 1rem 0 8rem 0;
 }
 
@@ -234,6 +236,7 @@ body {
   display: flex;
   row-gap: 1rem;
   flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0,0 ,0.1);
 }
 
 .description-title{
@@ -256,6 +259,57 @@ body {
   transition: filter 0.5s;
 }
 
-.description-button{
+.description-button:hover{
   filter: brightness(0.9);
+}
+
+/*CONTATO*/
+
+.contact{
+  width: 100%;
+  background: var(--white);
+}
+
+.contact-content{
+  width: 90%;
+  display: flex;
+  background: #fef4de;
+  margin: auto;
+}
+
+.contact-title{
+  text-align: center;
+  margin: 0 0 3rem 0;
+  padding: 2rem 0;
+  font-size: var(--font-size-medium);
+  color:var(--brown);
+  font-weight: 700;
+  font-family: var(--font-header);
+}
+.contact-form {
+width: 50%;
+display: flex;
+margin: 2rem;
+row-gap: 1rem;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.contact-form input{
+  border-radius: 4rem;
+  height: 56px;
+  border: solid 2px #888888;
+  width: 375px;
+}
+
+.contact-form textarea{
+  border-radius: 1rem;
+  height: 86px;
+  border: solid 2px  #888888;
+  width: 375px;
+}
+
+.contact-img{
+  width: 50%;
 }
