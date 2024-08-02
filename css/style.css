@@ -273,7 +273,6 @@ body {
 .contact-content{
   width: 90%;
   display: flex;
-  background: #fef4de;
   margin: auto;
 }
 
@@ -312,4 +311,27 @@ justify-content: center;
 
 .contact-img{
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.contact-btn {
+  margin: 0.4rem auto 2rem;
+  font-family: var(--font-header);
+  width: 150px;
+  justify-content: center;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  background: var(--button-ligth);
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  display: flex;
+  transition: filter 0.5s;
+}
+
+.contact-btn:hover {
+filter: brightness(0.9);  
 }
