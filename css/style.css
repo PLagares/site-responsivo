@@ -335,3 +335,92 @@ justify-content: center;
 .contact-btn:hover {
 filter: brightness(0.9);  
 }
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 600px){
+
+  /*DESCRIPTIONS RESPONSIVE*/
+  .description-title, 
+  .description, 
+  .description-rating {
+    text-align: center;
+  }
+    /*CONTACT RESPONSIVE*/
+
+  .contact-form input, 
+  .contact-form textarea {
+    max-width: 90%;
+    margin: auto;
+  }
+    /*CARDS RESPONSIVE*/
+  .card{
+    width: 200px; 
+    height: 150px;
+    min-width: 200px;
+  }
+
+  .card-content{
+    flex-wrap: nowrap ;
+    overflow-x: scroll;
+
+  }
+}
+.card-content::-webkit-scrollbar{
+  background:var(--button-ligth);
+  border-radius: 20px;
+}
+.card-content::-webkit-scrollbar-thumb{
+  background: var(--orange);
+  border-radius: 10px;
+}
+@media only screen and (max-width: 600px) and (max-width:1024px) {
+}
+@media only screen and (max-width: 600px){
+  :root {
+  --font-size-small: 0.8rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 4rem;
+  }
+
+
+  /* BANNER RESPONSIVE */
+  .contact-img, 
+  .banner-img{
+    display: none;
+  }
+
+  .banner{
+    width: 100%;
+    display: flex;
+    border-radius: 0;
+  }
+
+  .banner-text{
+    width: 90%;
+    row-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-description{
+    text-align: center;
+  }
+  .banner-button{
+    text-align: center;
+  }
+    /* DESCRIPTIONS RESPONSIVE */
+  .description-content {
+    flex-direction: column;
+  }
+  .description-card{
+    width: 90%;
+    max-width: 90%;
+  }
+  /*contatct responsive */
+  .contact-form{
+    width: 90%;
+    margin: auto;
+  }
+}
