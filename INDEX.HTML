@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Pedrolagares" />
+    <link rel="icon" href="./imagem/burger-card.webp">
     <Link rel="stylesheet" href="css/style.css"></Link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +21,8 @@
       <div class="LOGO" id="LOGO">
         <i class="fa-solid fa-cart-shopping"></i>
         <a>
-          Big
-          <span class="description-rating">Burger</span>
+          Ágil
+          <span class="description-rating">Transportes</span>
         </a>
       </div>
       <!-- menu  -->
@@ -114,11 +115,13 @@
 <section class="contact">
   <h2 class="contact-title">CONTATO</h2>
   <div class="contact-content">
-
-    <form class="contact-form">
-      <input type="TEXT"/>
-        <input type="EMAIL"/>
-          <textarea></textarea>
+    <form action="https://api.staticforms.xyz/submit" method="post" class="contact-form"
+    >
+    <input type="hidden" name="accessKey" value="6d86c06b-e1c3-463e-9b2b-493266837c22">
+    <input type="TEXT" name="name" required placeholder="Digite seu nome ..."/>
+        <input type="EMAIL" name="email" required placeholder="Digite seu Email"/>
+          <textarea name="message" required placeholder="Digite sua Mensagem"></textarea>
+          <input type="hidden" name="redirectTo" value="https://wa.me/62982102227?text=Ol%C3%A1,%20Gostaria%20de%20fazer%20um%20or%C3%A7amento">
           <button type="Submit" class="contact-btn">ENVIAR</button>
     </form>
     <aside class="contact-img">
